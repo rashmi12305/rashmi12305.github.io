@@ -11,10 +11,22 @@
     <link rel=”preconnect” src=”src/index.scss” as=”style”>
     <link href="https://fonts.googleapis.com/css2?family=Alatsi" rel="stylesheet">   
     <title>Rashmi Tindwani</title>
-    <script type="module" crossorigin src="/assets/index-nap2Ybx_.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DFDq62Xy.css">
+    <script type="module" crossorigin src="/assets/index-BNXfdqUU.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DCfyb7gd.css">
   </head>
+  
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
+    <!-- remove animation on window resizing -->
+    <script>
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+          document.body.classList.add("resize-animation-stopper");
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(() => {
+            document.   body.classList.remove("resize-animation-stopper");
+          }, 400);
+        });
+    </script>
   </body>
 </html>
